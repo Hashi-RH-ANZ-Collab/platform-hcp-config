@@ -17,7 +17,7 @@ terraform {
 }
 
 provider "hcp" {
-  project_id    = var.hcp_project_id
+  project_id    = data.tfe_outputs.project.values["hcp_project_id"]
 }
 
 provider "aws" {
@@ -26,5 +26,5 @@ provider "aws" {
 
 provider "tfe" {
   hostname     = "app.terraform.io"
-  organization = "tfo-apj-demos"
+  organization = var.tfe_organization_name
 }
