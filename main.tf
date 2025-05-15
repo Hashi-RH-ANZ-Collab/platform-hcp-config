@@ -1,3 +1,8 @@
+data "tfe_outputs" "project" {
+  workspace = "platform-hcp-project"
+}
+
+
 locals {
   deployment_id = lower("${var.deployment_name}-${random_string.suffix.result}")
 }
