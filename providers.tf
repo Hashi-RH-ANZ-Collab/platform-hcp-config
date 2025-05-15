@@ -17,7 +17,7 @@ terraform {
 }
 
 provider "hcp" {
-  project_id    = data.tfe_outputs.project.values["hcp_project_id"]
+  project_id    = data.tfe_outputs.project.values.hcp_project_id
 }
 
 provider "aws" {
