@@ -3,7 +3,7 @@
 variable "deployment_name" {
   description = "deployment name to prefix resources"
   type        = string
-  default     = "skoaap"
+  default     = "hashiredhat"
 }
 
 // hashicorp cloud platform (hcp) variables
@@ -37,7 +37,7 @@ variable "hcp_vault_tier" {
 variable "aws_region" {
   description = "aws region"
   type        = string
-  default     = "us-west-1"
+  default     = "ap-southeast-2"
 }
 
 // amazon web services (aws) variables
