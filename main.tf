@@ -9,7 +9,7 @@ locals {
 }
 
 resource "random_string" "suffix" {
-  length  = 8
+  length  = 4
   special = false
 }
 
@@ -45,7 +45,7 @@ module "vault-hcp" {
   source = "./modules/vault"
 
   deployment_name = var.deployment_name
-  hvn_id          = hcp_hvn.hvn.id
+  hvn_id          = hcp_hvn.hvn.hvn_id
   tier            = var.hcp_vault_tier
 }
 

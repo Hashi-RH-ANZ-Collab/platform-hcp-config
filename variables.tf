@@ -3,7 +3,7 @@
 variable "deployment_name" {
   description = "deployment name to prefix resources"
   type        = string
-  default     = "hashiredhat"
+  default     = "tf-aap"
 }
 
 variable "tfe_organization_name" {
