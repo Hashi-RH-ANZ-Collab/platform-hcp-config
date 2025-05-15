@@ -6,6 +6,12 @@ variable "deployment_name" {
   default     = "hashiredhat"
 }
 
+variable "tfe_organization_name" {
+  description = "terraform cloud organization name"
+  type        = string
+  default     = "tfo-apj-demos"
+}
+
 // hashicorp cloud platform (hcp) variables
 variable "hcp_client_id" {
   description = "hcp client id"

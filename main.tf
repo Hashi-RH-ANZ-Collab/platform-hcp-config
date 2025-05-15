@@ -1,4 +1,5 @@
 data "tfe_outputs" "project" {
+  organization = var.tfe_organization_name
   workspace = "platform-hcp-project"
 }
 
